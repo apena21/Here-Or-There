@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(196, 204, 160);
+}
+
+#jumbotron {
+    /*background-color: rgb(51, 49, 49);*/
+    /*background: url(images_here_or_there/hotbg4.jpg);*/
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    font-family: 'Shrikhand';
+    animation-name: header;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 100%;
+    /* height: 800px; */
+}
+
+img {
+    max-height: 400px;
+}
+
+@keyframes header {
+    from {
+        color: rgb(248, 8, 8);
+    }
+    to {
+        color: blue;
+    }
+}
+
+#jumboH1 {
+    text-align: center;
+}
+
+#jumboP {
+    text-align: center;
+    font-family: Brush Script MT, cursive;
+    font-size: 25px;
+}
+
+#search {
+    margin: auto;
+}
+
+#weatherCSS1 {
+    background-color: rgb(235, 232, 240);
+    color: rgb(41, 39, 39);
+    /* overflow: scroll; */
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+}
+
+#weatherCSS2 {
+    background-color: rgb(226, 223, 233);
+    color: rgb(41, 39, 39);
+    /* overflow: scroll; */
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+}
+
+#cityCSS1 {
+    background-color: rgb(190, 187, 199);
+    color: rgb(41, 39, 39);
+    height: 300px;
+    width: 705px;
+    overflow: scroll;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+}
+
+#cityCSS2 {
+    background-color: rgb(216, 212, 224);
+    color: rgb(41, 39, 39);
+    height: 300px;
+    width: 705px;
+    overflow: scroll;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+}
+.row {
+    margin-right: -80px;
+    margin-left: -5px;
+}
+
+
+#giph {
+    /*margin: auto;*/
+    color: rgb(255, 255, 255);
+    box-shadow: 0 20px 20px 0 rgba(240, 234, 234, 0.2), 0 20px 20px 0 rgba(243, 238, 238, 0.19);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+}
+
+#giph1 {
+    background-color: rgb(128, 123, 123);
+    border: 1px solid rgb(230, 224, 224);
+    /*padding: 100px;*/
+    height: 300px;
+    width: 705px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+}
+#giph2 {
+   background-color: rgb(128, 123, 123);
+   border: 1px solid rgb(230, 224, 224);
+   /* padding: 100px; */
+   margin-right: auto;
+   height: 300px;
+   width: 705px;
+   opacity: 0.6;
+   filter: alpha(opacity=60);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 15px 50px;
+   }
+
+   /* Kamal's css */
+   .image_city{
+       padding:10px;
+       width:100%;
+       height:100%;
+       border-radius:20px;
+   }
+   /* end of kamal's css */
+
+.footer-copyright {
+    text-align: center;
+    background-color: black;
+    color: white;
+    /*position: absolute;*/
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+Add Comment
