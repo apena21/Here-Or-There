@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/HereOrThere.css">
-    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> Deb changed font style-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javascript/scriptAJAX.js"></script>
@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="container">
 
         <!-- Jumbotron header -->
         <div id="jumbotron">
@@ -37,25 +37,25 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item">
-                        <img src="assets/images/American_Tobacco_skyline.jpg" alt="Durham" style="width:100%;">
+                        <img src="assets/images/pedro-menezes-513087.jpg" alt="Ponta Negra Brazil" style="width:100%;">
                     </div>
 
                     <div class="item active">
-                        <img src="assets/images/south-africa.jpg" alt="South Africa" style="width:100%;">
+                        <img src="assets/images/pedro-lastra-152876.jpg" alt="Chicago" style="width:100%;">
                     </div>
 
 
                     <div class="item">
-                        <img src="assets/images/france-ms1.jpg" alt="France" style="width:100%;">
+                        <img src="assets/images/philippe-d-536777.jpg" alt="Paris" style="width:100%;">
                     </div>
 
                     <div class="item">
 
-                        <img src="assets/images/snow-image.png" alt="Winter" style="width:100%;">
+                        <img src="assets/images/dan-gold-341661.jpg" alt="Hong Kong" style="width:100%;">
                     </div>
 
                     <div class="item">
-                        <img src="assets/images/Caribbean-Bahamas-sea-turtle-swim.jpg" alt="Turtle" style="width:100%;">
+                        <img src="assets/images/matt-lamers-331388-2.jpg" alt="Alesund Norway" style="width:100%;">
 
                     </div>
                 </div>
@@ -71,149 +71,146 @@
                 </a>
             </div>
         </div>
-    </div>
+    <!-- </div>  moved end of div so that panels would fit evenly on--> 
 
-    <br>
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-    <!-- search fields -->
-    <div class="row" id="search">
+        <!-- search fields -->
+        <div class="row" id="search">
+            <div class="row">
+                <div class="col-lg-6" id="city1">
+                    
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button id="btn1" class="btn btn-default" type="button">Go!</button>
+                        </span>
+                        <input type="text" id="textInput1" class="form-control" placeholder="Enter in City's name...">
+                    </div>
+                </div>
+
+                <div class="col-lg-6" id="city2">
+                    <div class="input-group">
+                        <input type="text" id="textInput2" class="form-control" placeholder="Enter in City's name...">
+                        <span class="input-group-btn">
+                            <button id="btn2" class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- weather fields -->
         <div class="row">
-            <div class="col-lg-6" id="city1">
-                   
-                <div class="input-group">
-                    <span class="input-group-btn">
-                      
-                                        <button id="btn1" class="btn btn-default" type="button">Go!</button>
-                                    </span>
-
-                    <input type="text" id="textInput1" class="form-control" placeholder="Enter in City's name...">
+            <div class="col-lg-6">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active" id="weatherCSS1">
+                        <h3 class="list-group-item-heading" id="weather1">Weather</h3>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 text-center left-panel">
+                                <h4>City: <span id="city1a"></span></h4>  <!-- Anna renamed because we were using same id for diff variables -->
+                                <h4>Main Weather: <span id="main_weather1"></span></h4>
+                                <h4>Description: <span id="description_weather1"></span></h4>
+                                <img id="weather_image1" src="">
+                                <h4>Temperature: <span id="temperature1"></span></h4>
+                                <h4>Pressure: <span id="pressure1"></span></h4>
+                                <h4>Humidity: <span id="humidity1"></span></h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            <div class="col-lg-6" id="city2">
-                <div class="input-group">
-                    <input type="text" id="textInput2" class="form-control" placeholder="Enter in City's name...">
-                    <span class="input-group-btn">
-
-                                        <button id="btn2" class="btn btn-default" type="button">Go!</button>
-                                    </span>
-
+            <div class="col-lg-6">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active" id="weatherCSS2">
+                        <h3 class="list-group-item-heading" id="weather2">Weather</h3>
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 text-center right-panel">
+                                <h4>City: <span id="city2a"></span></h4> <!-- Anna renamed because we were using same id for diff variables -->
+                                <h4>Main Weather: <span id="main_weather2"></span></h4>
+                                <h4>Description: <span id="description_weather2"></span></h4>
+                                <img id="weather_image2" src="">
+                                <h4>Temperature: <span id="temperature2"></span></h4>
+                                <h4>Pressure: <span id="pressure2"></span></h4>
+                                <h4>Humidity: <span id="humidity2"></span></h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- text and news input fields -->
+        <div class="row">
+            <div class="col-lg-6" id="leftNewsColumn">
+                <div class="list-group" >
+                    <a href="#" class="list-group-item active" id="cityCSS1">
+                        <h3 class="list-group-item-heading" id="city1">News</h3>
+                        <h4><p id="info1">Get the latest news.</p></h4>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6" id="rightNewsColumn">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active" id="cityCSS1">
+                        <h3 class="list-group-item-heading" id="city2">News</h3>
+                        <h4><p id="info2">Get the latest news.</p></h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- giph div-->
+        <div class='row'>
+            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+                <div class="panel panel-default" id="giph1">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+                <div class="panel panel-default" id="giph2">
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+        <!--Footer-->
+        <footer class="footer-copyright">
+
+            <!--Copyright-->
+            <div>
+                <div class="container-fluid">
+
+                    © 2018 Copyright: UNC Bootcamp : Project 1 of Tech Gurus
+                    <p>Powered by News API, OpenWeatherMap, and Unsplash API</p>
+
+                </div>
+            </div>
+
+        </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+
+        <!-- <script src="assets/javascript/jsWeather.js"></script>
+        <script src="assets/javascript/NewsAPI.js"></script> -->
+        <script src="assets/javascript/combinedFiles.js"></script>
+        <script src="assets/javascript/scriptAJAX.js"></script>
+        <!-- <script src="here-or-there.js"></script> -->
     </div>
-
-    <br>
-
-    <!-- weather fields -->
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="list-group">
-                <a href="#" class="list-group-item active" id="weatherCSS1">
-                    <h4 class="list-group-item-heading" id="weather1">Weather</h4>
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 text-center left-panel">
-                            <h2>City: <span id="city1a"></span></h2>  <!-- Anna renamed because we were using same id for diff variables -->
-                            <h2>Main Weather: <span id="main_weather1"></span></h2>
-                            <h2>Description: <span id="description_weather1"></span></h2>
-                            <img id="weather_image1" src="">
-                            <h2>Temperature: <span id="temperature1"></span></h2>
-                            <h2>Pressure: <span id="pressure1"></span></h2>
-                            <h2>Humidity: <span id="humidity1"></span></h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="list-group">
-                <a href="#" class="list-group-item active" id="weatherCSS2">
-                    <h4 class="list-group-item-heading" id="weather2">Weather</h4>
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 text-center right-panel">
-                            <h2>City: <span id="city2a"></span></h2> <!-- Anna renamed because we were using same id for diff variables -->
-                            <h2>Main Weather: <span id="main_weather2"></span></h2>
-                            <h2>Description: <span id="description_weather2"></span></h2>
-                            <img id="weather_image2" src="">
-                            <h2>Temperature: <span id="temperature2"></span></h2>
-                            <h2>Pressure: <span id="pressure2"></span></h2>
-                            <h2>Humidity: <span id="humidity2"></span></h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- text and news input fields -->
-    <div class="row">
-        <div class="col-lg-6" id="leftNewsColumn">
-            <div class="list-group" >
-                <a href="#" class="list-group-item active" id="cityCSS1">
-                    <h4 class="list-group-item-heading" id="city1">Local News</h4>
-                    <p id="info1">This is where the news information will go.</p>
-                </a>
-            </div>
-        </div>
-
-
-        <div class="col-lg-6" id="rightNewsColumn">
-            <div class="list-group">
-                <a href="#" class="list-group-item active" id="cityCSS1">
-                    <h4 class="list-group-item-heading" id="city2">Local News</h4>
-                    <p id="info2">This is where the news information will go.</p>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- giph div-->
-    <div class='row'>
-        <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
-            <div class="panel panel-default" id="giph1">
-            </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
-            <div class="panel panel-default" id="giph2">
-            </div>
-        </div>
-    </div>
-
-
-
-    </div>
-
-    <!--Footer-->
-    <footer class="footer-copyright">
-
-        <!--Copyright-->
-        <div>
-            <div class="container-fluid">
-
-                © 2017 Copyright: UNC Bootcamp : Project 1 of Tech Gurus
-                <p>Powered by News API</p>
-
-            </div>
-        </div>
-
-    </footer>
-
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
-
-    <!-- <script src="assets/javascript/jsWeather.js"></script>
-    <script src="assets/javascript/NewsAPI.js"></script> -->
-    <script src="assets/javascript/combinedFiles.js"></script>
-    <script src="assets/javascript/scriptAJAX.js"></script>
-    <!-- <script src="here-or-there.js"></script> -->
 
 
 </body>

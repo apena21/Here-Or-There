@@ -1,5 +1,15 @@
 body {
-    background-color: rgb(196, 204, 160);
+    background-color: lightblue;
+}
+
+h3 {
+    font-size: 24px;
+    color: black;
+}
+
+h4 {
+    font-size: 18px;
+    color: black;
 }
 
 #jumbotron {
@@ -7,12 +17,12 @@ body {
     /*background: url(images_here_or_there/hotbg4.jpg);*/
     background-size: cover;
     color: white;
-    margin: 0 auto;
+    /* margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
-    margin-left: auto;
-    font-family: 'Shrikhand';
+    margin-left: auto; */
+    font-family: Arial, Helvetica, sans-serif;
     animation-name: header;
     animation-duration: 10s;
     animation-direction: alternate;
@@ -36,65 +46,83 @@ img {
 
 #jumboH1 {
     text-align: center;
+    font-weight: 900;
+    font-size: 60px;
 }
 
 #jumboP {
     text-align: center;
-    font-family: Brush Script MT, cursive;
-    font-size: 25px;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 #search {
     margin: auto;
 }
 
+#btn1, #btn2 {
+    background-color: rgb(27, 86, 175);
+    color: white;
+    font-weight: bold;
+}
+
+#weather1, #weather2, #city1, #city2 {
+    font-weight: bold;
+}
+
+#weather_image1, #weather_image2 {
+    height: 80px;
+}
+
 #weatherCSS1 {
     background-color: rgb(235, 232, 240);
-    color: rgb(41, 39, 39);
-    /* overflow: scroll; */
+    color: black;
     opacity: 0.6;
     filter: alpha(opacity=60);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px 50px;
+    border-radius: 10px;
 }
 
 #weatherCSS2 {
-    background-color: rgb(226, 223, 233);
-    color: rgb(41, 39, 39);
-    /* overflow: scroll; */
+    background-color: rgb(235, 232, 240);
+    color: black;
     opacity: 0.6;
     filter: alpha(opacity=60);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px 50px;
+    border-radius: 10px;
 }
 
+/* #info1, #info2 {
+    font-size: 14px;
+} */
 #cityCSS1 {
-    background-color: rgb(190, 187, 199);
-    color: rgb(41, 39, 39);
+    /* background-color: rgb(192, 194, 206); */
+    background-color: white;
+    color: black;
     height: 300px;
-    width: 705px;
-    overflow: scroll;
+    overflow: auto;
     opacity: 0.6;
     filter: alpha(opacity=60);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px 50px;
+    border-radius: 10px;
 }
 
 #cityCSS2 {
-    background-color: rgb(216, 212, 224);
-    color: rgb(41, 39, 39);
+    /* background-color: rgb(216, 212, 224); */
+    background-color: white;
+    color: black;
     height: 300px;
-    width: 705px;
-    overflow: scroll;
+    overflow: auto;
     opacity: 0.6;
     filter: alpha(opacity=60);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px 50px;
+    border-radius: 10px;
 }
-.row {
+/* .row {
     margin-right: -80px;
     margin-left: -5px;
-}
+} */
 
 
 #giph {
@@ -104,31 +132,31 @@ img {
     opacity: 0.6;
     filter: alpha(opacity=60);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px 50px;
+    /* border-radius: 15px 50px; */
 }
 
 #giph1 {
-    background-color: rgb(128, 123, 123);
+    background-color: white;
     border: 1px solid rgb(230, 224, 224);
     /*padding: 100px;*/
     height: 300px;
-    width: 705px;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    /* width: 705px; */
+    opacity: 0.9;
+    filter: alpha(opacity=90);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px 50px;
+    border-radius: 10px;
 }
 #giph2 {
-   background-color: rgb(128, 123, 123);
+   background-color: white;
    border: 1px solid rgb(230, 224, 224);
    /* padding: 100px; */
    margin-right: auto;
    height: 300px;
-   width: 705px;
-   opacity: 0.6;
-   filter: alpha(opacity=60);
+   /* width: 705px; */
+   opacity: 0.9;
+   filter: alpha(opacity=90);
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   border-radius: 15px 50px;
+   border-radius: 10px;
    }
 
    /* Kamal's css */
@@ -142,7 +170,8 @@ img {
 
 .footer-copyright {
     text-align: center;
-    background-color: black;
+    padding: 10px;
+    background-color: rgb(85, 98, 104);
     color: white;
     /*position: absolute;*/
     margin-bottom: 0;
@@ -151,4 +180,4 @@ img {
 }
 
 
-Add Comment
+/* Deb revised CSS on 2.2.18 */
