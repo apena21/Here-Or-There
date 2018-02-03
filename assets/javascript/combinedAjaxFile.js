@@ -19,7 +19,7 @@ var url = 'https://api.unsplash.com/photos/random/?client_id=' + id + '&per_page
 
 // create function to call the openweathermap api
 function getWeatherInfo(location, callback) {
-    var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&APPID=" + appID;
+    var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + location + "&APPID=" + appID;
 
     $.getJSON(weatherUrl, function(json) {
         callback({
