@@ -1,15 +1,15 @@
-const config = {
-    apiKey: "AIzaSyB8GZIm_1SEoqo4gVr_l0e-cRgJ6GDBPA0",
-    authDomain: "here-or-there.firebaseapp.com",
-    databaseURL: "https://here-or-there.firebaseio.com",
-    projectId: "here-or-there",
-    storageBucket: "here-or-there.appspot.com",
-    messagingSenderId: "448013417470"
-};
+// const config = {
+//     apiKey: "AIzaSyB8GZIm_1SEoqo4gVr_l0e-cRgJ6GDBPA0",
+//     authDomain: "here-or-there.firebaseapp.com",
+//     databaseURL: "https://here-or-there.firebaseio.com",
+//     projectId: "here-or-there",
+//     storageBucket: "here-or-there.appspot.com",
+//     messagingSenderId: "448013417470"
+// };
   
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
-var dbRef = firebase.database().ref();
+// var dbRef = firebase.database().ref();
 
 var appID = "bff087f159c4f0f8f86174f72117926c";
 
@@ -37,17 +37,17 @@ function getWeatherInfo(location, callback) {
 
 
 
-// queryURLBase is the start of our API endpoint. The searchTerm will be appended to this when
-// the user hits the search button
-function addWeatherToFirebase(cityName) {
-    event.preventDefault();
+// // queryURLBase is the start of our API endpoint. The searchTerm will be appended to this when
+// // the user hits the search button
+// function addWeatherToFirebase(cityName) {
+//     event.preventDefault();
 
-    let weather = {
-        city: cityName
-    };
-    dbRef.push(weather);
-    return weather;
-}
+//     let weather = {
+//         city: cityName
+//     };
+//     dbRef.push(weather);
+//     return weather;
+// }
 
 var numArticles = 10;
 
@@ -90,7 +90,7 @@ $("#btn1").on("click", function(event1) {  //Anna added function name
       $("#humidity1").html(data.humidity);
       $("#leftPanelWeather").removeClass("hidden");
   
-      // $(".left-panel").show();
+      $(".left-panel").show();
   
       addWeatherToFirebase(cityName);
     });
@@ -178,7 +178,7 @@ $("#btn2").on("click", function(event2) {  //Anna added function name
       $("#humidity2").html(data.humidity);
       $("#rightPanelWeather").removeClass("hidden");
   
-      // $(".right-panel").show();
+      $(".right-panel").show();
   
       addWeatherToFirebase(cityName);
     });
